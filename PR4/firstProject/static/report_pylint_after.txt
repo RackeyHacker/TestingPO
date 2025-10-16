@@ -1,0 +1,24 @@
+************* Module snake_with_errors
+snake_with_errors.py:4:11: C0303: Trailing whitespace (trailing-whitespace)
+snake_with_errors.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+snake_with_errors.py:24:0: C0103: Constant name "Speed" doesn't conform to UPPER_CASE naming style (invalid-name)
+snake_with_errors.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+snake_with_errors.py:46:8: W0107: Unnecessary pass statement (unnecessary-pass)
+snake_with_errors.py:36:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+snake_with_errors.py:140:4: E1101: Module 'pygame' has no 'init' member (no-member)
+snake_with_errors.py:145:10: E0602: Undefined variable 'SPEEDS' (undefined-variable)
+snake_with_errors.py:148:19: E0602: Undefined variable 'SPEED' (undefined-variable)
+snake_with_errors.py:170:8: R1720: Unnecessary "elif" after "raise", remove the leading "el" from "elif" (no-else-raise)
+snake_with_errors.py:170:25: E1101: Module 'pygame' has no 'QUIT' member (no-member)
+snake_with_errors.py:171:12: E1101: Module 'pygame' has no 'quit' member (no-member)
+snake_with_errors.py:173:27: E1101: Module 'pygame' has no 'KEYDOWN' member (no-member)
+snake_with_errors.py:174:28: E1101: Module 'pygame' has no 'K_UP' member (no-member)
+snake_with_errors.py:176:30: E1101: Module 'pygame' has no 'K_DOWN' member (no-member)
+snake_with_errors.py:178:30: E1101: Module 'pygame' has no 'K_LEFT' member (no-member)
+snake_with_errors.py:180:30: E1101: Module 'pygame' has no 'K_RIGHT' member (no-member)
+snake_with_errors.py:4:0: C0411: standard import "math" should be placed before third party import "pygame" (wrong-import-order)
+snake_with_errors.py:4:0: W0611: Unused import math (unused-import)
+
+-----------------------------------
+Your code has been rated at 5.12/10
+

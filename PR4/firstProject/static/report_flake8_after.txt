@@ -1,0 +1,6 @@
+snake_with_errors.py:4:1: F401 'math' imported but unused
+snake_with_errors.py:4:12: W291 trailing whitespace
+snake_with_errors.py:24:6: E221 multiple spaces before operator
+snake_with_errors.py:32:1: E302 expected 2 blank lines, found 1
+snake_with_errors.py:145:11: F821 undefined name 'SPEEDS'
+snake_with_errors.py:148:20: F821 undefined name 'SPEED'

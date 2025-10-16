@@ -1,0 +1,51 @@
+Run started:2025-10-15 08:50:58.164811
+
+Test results:
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b311-random
+   Location: .\snake_original.py:56:12
+55	        """Размещает яблоко в случайной клетке игрового поля"""
+56	        x = randint(0, GRID_WIDTH - 1) * GRID_SIZE
+57	        y = randint(0, GRID_HEIGHT - 1) * GRID_SIZE
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b311-random
+   Location: .\snake_original.py:57:12
+56	        x = randint(0, GRID_WIDTH - 1) * GRID_SIZE
+57	        y = randint(0, GRID_HEIGHT - 1) * GRID_SIZE
+58	        self.position = (x, y)
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b311-random
+   Location: .\snake_original.py:128:25
+127	        self.positions = [self.position]
+128	        self.direction = choice([UP, DOWN, LEFT, RIGHT])
+129	        self.next_direction = None
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 134
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 3
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 3
+Files skipped (0):

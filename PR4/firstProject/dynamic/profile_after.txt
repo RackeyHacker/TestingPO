@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\cProfile.py", line 195, in <module>
+    main()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\cProfile.py", line 184, in main
+    runctx(code, globs, None, options.outfile, options.sort)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\cProfile.py", line 21, in runctx
+    return _pyprofile._Utils(Profile).runctx(statement, globals, locals,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\profile.py", line 64, in runctx
+    prof.runctx(statement, globals, locals)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\cProfile.py", line 102, in runctx
+    exec(cmd, globals, locals)
+  File "snake_runtime_errors.py", line 183, in <module>
+    main()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\memory_profiler.py", line 1188, in wrapper
+    val = prof(func)(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\memory_profiler.py", line 761, in f
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "snake_runtime_errors.py", line 171, in main
+    snake.move()
+  File "snake_runtime_errors.py", line 93, in move
+    speed_factor = 1 / (self.length - 1)
+                   ~~^~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: division by zero

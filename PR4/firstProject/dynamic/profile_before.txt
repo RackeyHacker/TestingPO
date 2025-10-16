@@ -1,0 +1,28 @@
+Wed Oct 15 12:23:03 2025    profile_before.stats
+
+         601426 function calls (589844 primitive calls) in 3.084 seconds
+
+   Ordered by: internal time
+   List reduced from 4268 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       35    1.666    0.048    1.666    0.048 {method 'tick' of 'pygame.time.Clock' objects}
+        1    0.259    0.259    0.262    0.262 {built-in method pygame.base.init}
+     3112    0.107    0.000    0.107    0.000 {built-in method nt.stat}
+        2    0.106    0.053    0.106    0.053 {built-in method _wmi.exec_query}
+     1728    0.087    0.000    0.087    0.000 {built-in method nt._getfinalpathname}
+        1    0.079    0.079    0.079    0.079 {built-in method pygame.base.quit}
+      748    0.057    0.000    0.057    0.000 {built-in method marshal.loads}
+      909    0.048    0.000    0.048    0.000 {built-in method _io.open_code}
+      909    0.046    0.000    0.046    0.000 {method 'read' of '_io.BufferedReader' objects}
+       35    0.034    0.001    0.034    0.001 {built-in method pygame.event.get}
+    46/44    0.033    0.001    0.040    0.001 {built-in method _imp.create_dynamic}
+     6017    0.031    0.000    0.047    0.000 <frozen importlib._bootstrap_external>:96(_path_join)
+        1    0.030    0.030    0.030    0.030 {built-in method pygame.display.set_mode}
+      973    0.026    0.000    0.026    0.000 {built-in method nt._path_exists}
+2090/2069    0.024    0.000    0.123    0.000 {built-in method builtins.__build_class__}
+        1    0.022    0.022    2.080    2.080 snake_original.py:151(main)
+       35    0.012    0.000    0.012    0.000 {built-in method pygame.display.update}
+     1219    0.011    0.000    0.148    0.000 <frozen importlib._bootstrap_external>:1597(find_spec)
+       86    0.008    0.000    0.008    0.000 {built-in method nt.listdir}
+    67090    0.008    0.000    0.009    0.000 {built-in method builtins.isinstance}
