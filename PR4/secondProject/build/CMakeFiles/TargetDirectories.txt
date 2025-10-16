@@ -1,0 +1,3 @@
+C:/Users/User/source/repos/KursachProject/KursachProject/build/CMakeFiles/KursachProject.dir
+C:/Users/User/source/repos/KursachProject/KursachProject/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/source/repos/KursachProject/KursachProject/build/CMakeFiles/ZERO_CHECK.dir

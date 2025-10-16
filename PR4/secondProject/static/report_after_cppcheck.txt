@@ -1,0 +1,113 @@
+KursachProject_with_bugs.cpp:3:0: information: Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <iostream>
+^
+KursachProject_with_bugs.cpp:4:0: information: Include file: <vector> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <vector>
+^
+KursachProject_with_bugs.cpp:5:0: information: Include file: <string> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <string>
+^
+KursachProject_with_bugs.cpp:6:0: information: Include file: <ctime> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <ctime>
+^
+KursachProject_with_bugs.cpp:7:0: information: Include file: <map> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <map>
+^
+KursachProject_with_bugs.cpp:8:0: information: Include file: <stdexcept> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdexcept>
+^
+KursachProject_with_bugs.cpp:9:0: information: Include file: <memory> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <memory>
+^
+KursachProject_with_bugs.cpp:10:0: information: Include file: <algorithm> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <algorithm>
+^
+KursachProject_with_bugs.cpp:11:0: information: Include file: <limits> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <limits>
+^
+KursachProject_with_bugs.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+KursachProject_with_bugs.cpp:34:12: performance: Function 'getType()' should return member 'type' by const reference. [returnByReference]
+    string getType() const {
+           ^
+KursachProject_with_bugs.cpp:223:12: performance: Function 'getUsername()' should return member 'username' by const reference. [returnByReference]
+    string getUsername() const {
+           ^
+KursachProject_with_bugs.cpp:227:14: performance: Function 'getBaseCurrency()' should return member 'baseCurrency' by const reference. [returnByReference]
+    Currency getBaseCurrency() const {
+             ^
+KursachProject_with_bugs.cpp:28:34: performance: Function parameter 'type' should be passed by const reference. [passedByValue]
+    Category(string name, string type) : name(name), type(type) {}
+                                 ^
+KursachProject_with_bugs.cpp:49:73: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Transaction(double amount, time_t date, Category category, Currency currency)
+                                                                        ^
+KursachProject_with_bugs.cpp:85:49: performance: Function parameter 'category' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                ^
+KursachProject_with_bugs.cpp:85:68: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                                   ^
+KursachProject_with_bugs.cpp:85:85: performance: Function parameter 'source' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                                                    ^
+KursachProject_with_bugs.cpp:101:50: performance: Function parameter 'category' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                 ^
+KursachProject_with_bugs.cpp:101:69: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                                    ^
+KursachProject_with_bugs.cpp:101:86: performance: Function parameter 'description' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                                                     ^
+KursachProject_with_bugs.cpp:122:46: performance: Function parameter 'baseCurrency' should be passed by const reference. [passedByValue]
+    FinanceManager(string username, Currency baseCurrency)
+                                             ^
+KursachProject_with_bugs.cpp:238:44: performance: Function parameter 'baseCurrency' should be passed by const reference. [passedByValue]
+    void addUser(string username, Currency baseCurrency) {
+                                           ^
+KursachProject_with_bugs.cpp:437:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject_with_bugs.cpp:459:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject_with_bugs.cpp:521:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject_with_bugs.cpp:150:23: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                total += transaction->getAmountInBaseCurrency();
+                      ^
+KursachProject_with_bugs.cpp:161:23: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                total += transaction->getAmountInBaseCurrency();
+                      ^
+KursachProject_with_bugs.cpp:273:23: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+            usernames.push_back(user.first);
+                      ^
+KursachProject_with_bugs.cpp:72:21: error: Uninitialized variable: &timeinfo [uninitvar]
+        localtime_s(&timeinfo, &date); // Используем безопасную версию
+                    ^
+KursachProject_with_bugs.cpp:150:17: error: Uninitialized variable: total [legacyUninitvar]
+                total += transaction->getAmountInBaseCurrency();
+                ^
+KursachProject_with_bugs.cpp:317:10: style: Variable 'leak' is allocated memory that is never used. [unusedAllocatedMemory]
+    int* leak = new int(42);
+         ^
+KursachProject_with_bugs.cpp:58:0: style: The function 'getAmount' is never used. [unusedFunction]
+    double getAmount() const {
+^
+KursachProject_with_bugs.cpp:181:0: style: The function 'displayTransactionsByCategory' is never used. [unusedFunction]
+    void displayTransactionsByCategory(const string& categoryName) const {
+^
+KursachProject_with_bugs.cpp:191:0: style: The function 'displayTransactionsByDateRange' is never used. [unusedFunction]
+    void displayTransactionsByDateRange(time_t startDate, time_t endDate) const {
+^
+KursachProject_with_bugs.cpp:223:0: style: The function 'getUsername' is never used. [unusedFunction]
+    string getUsername() const {
+^
+KursachProject_with_bugs.cpp:263:0: style: The function 'displayUsers' is never used. [unusedFunction]
+    void displayUsers() const {
+^
+nofile:0:0: information: Active checkers: 179/836 (use --checkers-report=<filename> to see details) [checkersReport]
+

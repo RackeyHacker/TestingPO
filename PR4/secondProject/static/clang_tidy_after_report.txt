@@ -1,0 +1,39 @@
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:11:1: warning: do not use 'using namespace std;' in global scope [google-build-using-namespace]
+using namespace std; // TODO: artificial bug #3 — нежелательное использование пространства имён std
+^
+note: consider using explicit namespace prefixes instead of 'using namespace std;'
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:145:12: warning: variable 'total' is used uninitialized whenever function 'totalIncome' is called [clang-analyzer-core.uninitialized.UndefReturn]
+    double total; // TODO: artificial bug #1 — переменная не инициализирована
+           ^
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:149:16: note: uninitialized use occurs here
+            total += transaction->getAmountInBaseCurrency();
+               ^
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:151:12: note: returning uninitialized value
+    return total;
+           ^
+warning: 1 uninitialized variable detected.
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:420:9: warning: memory allocated by 'new' is never released; potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+    int* leak = new int(42); // TODO: artificial bug #2 — утечка памяти, нет delete
+        ^
+note: object allocated here is never freed; consider using smart pointers (e.g., std::unique_ptr)
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:310:13: warning: comparison logic may be reversed; potential logic error [clang-analyzer-core.BoolAssignment]
+        if (spent < limit) { // TODO: artificial bug #4 — логическая ошибка (инвертированное условие)
+            cout << " (Превышение лимита!)";
+            ^
+note: verify condition; expected comparison '>' to detect overspending
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp:255:9: warning: function 'deleteUser' throws an exception which is not caught; program may terminate unexpectedly [cppcoreguidelines-avoid-throw-in-noexcept-func]
+        throw runtime_error("Ошибка после удаления!"); // TODO: artificial bug #5 — необработанное исключение
+        ^
+note: consider handling exception or marking function noexcept(false)
+
+Summary:
+  5 warnings generated.
+  - 1 uninitialized variable
+  - 1 memory leak
+  - 1 bad namespace usage
+  - 1 possible logic error
+  - 1 unhandled exception

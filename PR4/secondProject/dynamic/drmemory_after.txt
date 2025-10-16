@@ -1,0 +1,28 @@
+Dr. Memory version 2.5.0
+Running "KursachProject.exe"
+Application cmdline: C:\Users\User\source\repos\KursachProject\x64\Debug\KursachProject.exe
+
+~~Dr.M~~ Dr. Memory results for process "KursachProject.exe"
+~~Dr.M~~ ---------------------------------------------------
+~~Dr.M~~ Error #1: UNINITIALIZED READ
+~~Dr.M~~ # 0 KursachProject.exe!main [KursachProject.cpp:15]
+~~Dr.M~~ Note: reading uninitialized variable "uninit"
+~~Dr.M~~
+~~Dr.M~~ Error #2: LEAK 4 bytes
+~~Dr.M~~ # 0 KursachProject.exe!main [KursachProject.cpp:18]
+~~Dr.M~~ note: memory was allocated here:
+~~Dr.M~~     malloc/new: 4 bytes
+~~Dr.M~~     allocation callstack:
+~~Dr.M~~     KursachProject.exe!main [KursachProject.cpp:18]
+~~Dr.M~~ 
+~~Dr.M~~ Error #3: UNHANDLED EXCEPTION
+~~Dr.M~~ # 0 KursachProject.exe!main [KursachProject.cpp:22]
+~~Dr.M~~ Exception type: std::runtime_error ("Ошибка выполнения: неверные данные!")
+~~Dr.M~~ 
+~~Dr.M~~ SUMMARY:
+~~Dr.M~~     1 uninitialized read(s)
+~~Dr.M~~     1 memory leak(s), 4 total bytes leaked
+~~Dr.M~~     1 unhandled exception(s)
+~~Dr.M~~ 
+~~Dr.M~~ ERRORS FOUND: 3
+~~Dr.M~~ ---------------------------------------------------

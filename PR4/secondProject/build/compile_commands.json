@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "C:/Users/User/source/repos/KursachProject/KursachProject",
+    "command": "cl.exe /EHsc /nologo /std:c++17 KursachProject.cpp",
+    "file": "C:/Users/User/source/repos/KursachProject/KursachProject/KursachProject.cpp"
+  }
+]

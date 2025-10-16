@@ -1,0 +1,32 @@
+Проект: KursachProject
+Файл: KursachProject.cpp
+Конфигурация: Debug x64
+
+1>------ Перестроение всех файлов начато: проект: KursachProject, Конфигурация: Debug x64 ------
+1>KursachProject.cpp
+1>KursachProject.vcxproj -> C:\Users\User\source\repos\KursachProject\x64\Debug\KursachProject.exe
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(371): warning C26451: 
+Арифметическое переполнение: использование оператора "-" на 4-байтовом значении и приведение результата к 8-байтовому типу. 
+Приведите значение к более широкому типу перед вызовом оператора "-". (io.2)
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(454): warning C26451:
+Арифметическое переполнение: использование оператора "-" на 4-байтовом значении и приведение результата к 8-байтовому типу. (io.2)
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(477): warning C26451:
+Арифметическое переполнение: использование оператора "-" на 4-байтовом значении и приведение результата к 8-байтовому типу. (io.2)
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(516): warning C26451:
+Арифметическое переполнение: использование оператора "-" на 4-байтовом значении и приведение результата к 8-байтовому типу. (io.2)
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(72): warning C6001:
+Использование неинициализированной памяти 'timeinfo'. Может привести к неопределённому поведению.
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(317): warning C6011:
+Потенциальная утечка памяти: указатель 'leak' выделен с помощью new, но нигде не освобождается.
+
+C:\Users\User\source\repos\KursachProject\KursachProject\KursachProject.cpp(255): warning C6285:
+Выражение сравнивает одинаковые значения. Вероятно, здесь имелась в виду логическая ошибка (ошибка условия).
+
+========== Построение проекта "KursachProject.vcxproj" завершено с предупреждениями ==========
+1>Сборка завершена. Ошибки: 0, Предупреждения: 7

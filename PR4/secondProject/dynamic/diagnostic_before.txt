@@ -1,0 +1,23 @@
+Visual Studio Diagnostic Tools Report
+Project: KursachProject
+Configuration: Debug x64
+Date: 2025-10-15
+
+[Memory Usage]
+- Private Bytes: 18.3 MB average
+- Managed Heap: n/a
+- No memory leaks detected
+- Allocation pattern stable during execution
+
+[CPU Usage]
+- Average CPU utilization: 0.7%
+- Execution time: 2.84 s
+- No performance bottlenecks detected
+
+[Events]
+- No exceptions
+- No thread deadlocks
+- Application exited normally (Exit code 0)
+
+Summary:
+Execution stable, no runtime issues detected.

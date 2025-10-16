@@ -1,0 +1,2 @@
+C:\Users\User\source\repos\KursachProject\x64\Debug\KursachProject.exe.lastcodeanalysissucceeded
+C:\Users\User\source\repos\KursachProject\KursachProject\x64\Debug\NativeCodeAnalysis.read.1.tlog

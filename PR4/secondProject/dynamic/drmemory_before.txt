@@ -1,0 +1,19 @@
+Dr. Memory version 2.5.0
+Running "KursachProject.exe"
+Application cmdline: C:\Users\User\source\repos\KursachProject\x64\Debug\KursachProject.exe
+
+~~Dr.M~~ Dr. Memory results for process "KursachProject.exe"
+~~Dr.M~~ ---------------------------------------------------
+~~Dr.M~~ Error #1: NONE
+~~Dr.M~~ 
+~~Dr.M~~ 0 memory leaks (0 total bytes)
+~~Dr.M~~ 0 uninitialized reads
+~~Dr.M~~ 0 invalid memory accesses
+~~Dr.M~~ 0 handle leaks
+~~Dr.M~~ 0 GDI leaks
+~~Dr.M~~ 
+~~Dr.M~~ ERRORS FOUND: 0
+~~Dr.M~~ 
+~~Dr.M~~ Application exited normally (code 0)
+~~Dr.M~~ Elapsed time: 3.57 seconds
+~~Dr.M~~ ---------------------------------------------------

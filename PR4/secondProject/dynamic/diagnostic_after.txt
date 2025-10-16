@@ -1,0 +1,29 @@
+Visual Studio Diagnostic Tools Report
+Project: KursachProject
+Configuration: Debug x64
+Date: 2025-10-15
+
+[Memory Usage]
+- Private Bytes: 23.5 MB (↑ +5.2 MB)
+- 1 memory leak detected: allocation size 4 bytes (not released)
+- Heap allocation count increased during runtime
+- Leak source: main() at KursachProject.cpp:18
+
+[CPU Usage]
+- Average CPU utilization: 1.2%
+- Execution time before crash: 1.34 s
+- CPU spike at time of exception (↑ 96%)
+
+[Events]
+- Warning: Uninitialized variable "uninit" used (main.cpp:15)
+- Exception: std::runtime_error ("Ошибка выполнения: неверные данные!")
+- Application terminated abnormally (Exit code -1073740791)
+
+[Summary]
+- 1 uninitialized variable usage
+- 1 memory leak (4 bytes)
+- 1 runtime exception
+- Application crash observed
+
+Conclusion:
+Detected runtime anomalies caused by introduced memory management and logic errors.

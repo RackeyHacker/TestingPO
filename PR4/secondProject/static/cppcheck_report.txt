@@ -1,0 +1,110 @@
+KursachProject.cpp:1:0: information: Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+﻿#include <iostream>
+^
+KursachProject.cpp:2:0: information: Include file: <vector> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <vector>
+^
+KursachProject.cpp:3:0: information: Include file: <string> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <string>
+^
+KursachProject.cpp:4:0: information: Include file: <ctime> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <ctime>
+^
+KursachProject.cpp:5:0: information: Include file: <map> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <map>
+^
+KursachProject.cpp:6:0: information: Include file: <stdexcept> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdexcept>
+^
+KursachProject.cpp:7:0: information: Include file: <memory> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <memory>
+^
+KursachProject.cpp:8:0: information: Include file: <algorithm> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <algorithm>
+^
+KursachProject.cpp:9:0: information: Include file: <limits> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <limits>
+^
+KursachProject.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+KursachProject.cpp:33:12: performance: Function 'getType()' should return member 'type' by const reference. [returnByReference]
+    string getType() const {
+           ^
+KursachProject.cpp:222:12: performance: Function 'getUsername()' should return member 'username' by const reference. [returnByReference]
+    string getUsername() const {
+           ^
+KursachProject.cpp:226:14: performance: Function 'getBaseCurrency()' should return member 'baseCurrency' by const reference. [returnByReference]
+    Currency getBaseCurrency() const {
+             ^
+KursachProject.cpp:27:34: performance: Function parameter 'type' should be passed by const reference. [passedByValue]
+    Category(string name, string type) : name(name), type(type) {}
+                                 ^
+KursachProject.cpp:48:73: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Transaction(double amount, time_t date, Category category, Currency currency)
+                                                                        ^
+KursachProject.cpp:84:49: performance: Function parameter 'category' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                ^
+KursachProject.cpp:84:68: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                                   ^
+KursachProject.cpp:84:85: performance: Function parameter 'source' should be passed by const reference. [passedByValue]
+    Income(double amount, time_t date, Category category, Currency currency, string source)
+                                                                                    ^
+KursachProject.cpp:100:50: performance: Function parameter 'category' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                 ^
+KursachProject.cpp:100:69: performance: Function parameter 'currency' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                                    ^
+KursachProject.cpp:100:86: performance: Function parameter 'description' should be passed by const reference. [passedByValue]
+    Expense(double amount, time_t date, Category category, Currency currency, string description)
+                                                                                     ^
+KursachProject.cpp:121:46: performance: Function parameter 'baseCurrency' should be passed by const reference. [passedByValue]
+    FinanceManager(string username, Currency baseCurrency)
+                                             ^
+KursachProject.cpp:237:44: performance: Function parameter 'baseCurrency' should be passed by const reference. [passedByValue]
+    void addUser(string username, Currency baseCurrency) {
+                                           ^
+KursachProject.cpp:433:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject.cpp:455:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject.cpp:517:29: style: Variable 'manager' can be declared as reference to const [constVariableReference]
+            FinanceManager& manager = userManager.getUser(selectedUser);
+                            ^
+KursachProject.cpp:149:23: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                total += transaction->getAmountInBaseCurrency();
+                      ^
+KursachProject.cpp:160:23: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                total += transaction->getAmountInBaseCurrency();
+                      ^
+KursachProject.cpp:271:23: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+            usernames.push_back(user.first);
+                      ^
+KursachProject.cpp:71:21: error: Uninitialized variable: &timeinfo [uninitvar]
+        localtime_s(&timeinfo, &date); // Используем безопасную версию
+                    ^
+KursachProject.cpp:530:9: style: Unused variable: unusedVariable [unusedVariable]
+    int unusedVariable;
+        ^
+KursachProject.cpp:57:0: style: The function 'getAmount' is never used. [unusedFunction]
+    double getAmount() const {
+^
+KursachProject.cpp:180:0: style: The function 'displayTransactionsByCategory' is never used. [unusedFunction]
+    void displayTransactionsByCategory(const string& categoryName) const {
+^
+KursachProject.cpp:190:0: style: The function 'displayTransactionsByDateRange' is never used. [unusedFunction]
+    void displayTransactionsByDateRange(time_t startDate, time_t endDate) const {
+^
+KursachProject.cpp:222:0: style: The function 'getUsername' is never used. [unusedFunction]
+    string getUsername() const {
+^
+KursachProject.cpp:261:0: style: The function 'displayUsers' is never used. [unusedFunction]
+    void displayUsers() const {
+^
+nofile:0:0: information: Active checkers: 179/836 (use --checkers-report=<filename> to see details) [checkersReport]
+
